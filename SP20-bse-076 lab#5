@@ -1,0 +1,93 @@
+ package fraction;
+
+
+public class Fraction_runner {
+    public static void main(String[]args){
+        Fraction f1= new Fraction(8,9);
+        f1.display();
+        Fraction f2= new Fraction(23,45);
+        f2.display();
+        Fraction f3 = new Fraction();
+        
+        boolean a = f2.equals(f1);
+        
+        
+        if (a == true){
+            System.out.println("ratio is equal");
+        }
+        if (a == false){
+            System.out.println("ratio is unequal");
+        }
+        
+    }
+    
+}package Fraction
+
+
+public class Fraction {
+
+    private double numerator;
+    private double denominator;
+    public double divide;
+    public double ratio;
+    
+    public Fraction(double numerator, double denominator){
+        this.numerator = numerator;
+        this.denominator = denominator;
+        divide = numerator/ denominator;
+}
+    
+    public Fraction (){
+        
+    }
+    
+    public void setnumerator(double x){
+        this.numerator = x;
+        
+    }
+    
+    public void setdenominator(double y){
+        this.denominator = y;
+        
+    }
+    
+    public double getnumerator(){
+        return numerator;
+    }
+    
+    public double getdenominator(){
+        return denominator;
+    }
+    
+    
+    
+    
+    public boolean equals(Fraction F){
+            
+    
+        Fraction f = new Fraction(F.numerator,F.denominator);
+        ratio = F.numerator / F.denominator;
+        
+        
+        
+        if (ratio != divide){
+        return false;
+        
+    }
+        else
+        return true;
+    
+}
+    public void display(){
+        if (numerator <= denominator){
+            System.out.println("ratio "+numerator+" and "+denominator+" = : "+divide);
+            
+        }
+        
+        
+        
+        
+    }
+    
+    
+}
